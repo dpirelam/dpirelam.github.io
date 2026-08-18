@@ -191,23 +191,30 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CERTIFICACIONES EN CARRUSEL -->
+<!-- SECCIÓN CERTIFICACIONES EN CARRUSEL INTERACTIVO -->
     <section class="py-5 bg-light">
         <div class="container">
             <h3 class="fw-bold mb-5 text-center">
                 <i class="bi bi-award-fill text-warning me-2"></i>Certificaciones y Títulos Destacados
             </h3>
             
-            <!-- Carrusel Bootstrap -->
+            <!-- Carrusel Bootstrap con controles, indicadores y animación de transición -->
             <div id="certCarousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Botones indicadores inferiores (para seleccionar directamente qué ver) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+                </div>
+
                 <div class="carousel-inner px-md-5">
                     
-                    <!-- SLIDE 1: Los 3 certificados juntos -->
+                    <!-- SLIDE 1: QA Automation y Título AIEP -->
                     <div class="carousel-item active">
                         <div class="row g-4 justify-content-center">
                             
                             <!-- Certificado QA -->
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="cert-qa.png" class="card-img-top" alt="Certificado QA Automation" style="height: 220px; object-fit: cover; cursor: pointer; object-position: top;" data-bs-toggle="modal" data-bs-target="#modalCertQA">
                                     <div class="card-body text-center">
@@ -221,7 +228,7 @@
                             </div>
 
                             <!-- Título AIEP -->
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="cert-aiep.png" class="card-img-top border-bottom" alt="Título Técnico AIEP" style="height: 220px; object-fit: cover; cursor: pointer; object-position: top;" data-bs-toggle="modal" data-bs-target="#modalCertAIEP">
                                     <div class="card-body text-center">
@@ -234,8 +241,15 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2: Google Project Management y Python -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            
                             <!-- Certificado Google -->
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="card h-100 shadow-sm border-0">
                                     <img src="cert-google.png" class="card-img-top border-bottom" alt="Certificado Google Project Management" style="height: 220px; object-fit: cover; cursor: pointer; object-position: top;" data-bs-toggle="modal" data-bs-target="#modalCertGoogle">
                                     <div class="card-body text-center">
@@ -248,24 +262,26 @@
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-
-                    <!-- SLIDE 2: Vista individual o destacada para activar el movimiento -->
-                    <div class="carousel-item">
-                        <div class="row g-4 justify-content-center">
-                            <div class="col-md-6 text-center py-4">
-                                <div class="p-4 border rounded-3 bg-white shadow-sm">
-                                    <h5 class="fw-bold text-primary mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Formación Continua</h5>
-                                    <p class="text-muted mb-0">Cada certificación refleja el compromiso con la excelencia técnica, uniendo el análisis de procesos, la gestión de proyectos y la automatización de calidad.</p>
+                            <!-- Certificado Python OTEC JCCD -->
+                            <div class="col-md-5">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="cert-python.png" class="card-img-top" alt="Certificado Proceso de Datos en Python" style="height: 220px; object-fit: cover; cursor: pointer; object-position: top;" data-bs-toggle="modal" data-bs-target="#modalCertPython">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Proceso de Datos en Python</h5>
+                                        <p class="card-text text-muted mb-3">OTEC JCCD (SENCE)</p>
+                                        <button class="btn btn-outline-primary btn-sm rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#modalCertPython">
+                                            <i class="bi bi-zoom-in me-1"></i> Ver Certificado
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
                 </div>
 
-                <!-- Botones de Control (Flechas para deslizar) -->
+                <!-- Botones de Control (Flechas laterales) -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
@@ -275,6 +291,9 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
+
+        </div>
+    </section>
 
         </div>
     </section>
